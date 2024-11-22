@@ -7,7 +7,7 @@ const Tech: React.FC = () => {
   return (
     <div className="container mx-auto px-8 py-12">
       <h1 className="text-4xl font-bold text-center mb-8">Technology Used</h1>
-      <div className="mt-8 px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="mt-8 lg:px-28 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <SkillCard
           icon={
             <FaHtml5 className="text-gray-500 text-7xl mx-auto transition-colors duration-300 hover:text-orange-500" />
@@ -33,7 +33,7 @@ const Tech: React.FC = () => {
           title="Laravel"
         />
       </div>
-      <div className="mt-5 px-28 grid grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-5 lg:px-28 grid grid-cols-2 lg:grid-cols-3 gap-8">
         <SkillCard
           icon={
             <FaReact className="text-gray-500 text-7xl mx-auto transition-colors duration-300 hover:text-blue-500" />
