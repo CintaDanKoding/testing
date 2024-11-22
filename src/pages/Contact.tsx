@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
     subject: '',
     message: '',
   });
-  
+
   const [formStatus, setFormStatus] = useState<string>('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -26,36 +26,38 @@ const Contact: React.FC = () => {
       <h1 className="text-4xl font-bold text-center mb-8">Contact Us</h1>
 
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-        <h2 className="text-2xl font-semibold mb-6 text-center">Send Us a Message</h2>
+        <h2 className="text-xl font-semibold mb-6 text-center">Send Us a Message</h2>
 
         {formStatus && <div className="bg-green-100 text-green-800 p-4 rounded-lg mb-6">{formStatus}</div>}
 
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-gray-700 text-sm font-semibold mb-2">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="input input-bordered w-full"
-              required
-            />
+          <div className="grid grid-cols-2 gap-6">
+            <div className="mb-4">
+              <label htmlFor="name" className="block text-gray-700 text-sm font-semibold mb-2">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="input input-bordered w-full"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="email" className="block text-gray-700 text-sm font-semibold mb-2">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="input input-bordered w-full"
+                required
+              />
+            </div>
           </div>
 
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 text-sm font-semibold mb-2">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="input input-bordered w-full"
-              required
-            />
-          </div>
 
           <div className="mb-4">
             <label htmlFor="subject" className="block text-gray-700 text-sm font-semibold mb-2">Subject</label>
@@ -77,7 +79,7 @@ const Contact: React.FC = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              rows={6}
+              rows={4}
               className="textarea textarea-bordered w-full"
               required
             />
