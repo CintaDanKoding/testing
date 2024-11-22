@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
         {formStatus && <div className="bg-green-100 text-green-800 p-4 rounded-lg mb-6">{formStatus}</div>}
 
         <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-700 text-sm font-semibold mb-2">Name</label>
               <input
