@@ -1,6 +1,7 @@
 import React from 'react';
 import SkillCard from '../components/SkillCard';
-import { FaHtml5, FaReact, FaJsSquare, FaLaravel } from 'react-icons/fa';
+import { FaHtml5, FaReact, FaJsSquare, FaLaravel, FaCss3Alt  } from 'react-icons/fa';
+import { DiPhp } from "react-icons/di";
 import { DiCodeigniter } from "react-icons/di";
 
 const Tech: React.FC = () => {
@@ -16,9 +17,9 @@ const Tech: React.FC = () => {
         />
         <SkillCard
           icon={
-            <FaReact className="text-gray-500 text-7xl mx-auto transition-colors duration-300 hover:text-blue-500" />
+            <FaCss3Alt  className="text-gray-500 text-7xl mx-auto transition-colors duration-300 hover:text-blue-500" />
           }
-          title="React JS"
+          title="CSS"
         />
         <SkillCard
           icon={
@@ -28,9 +29,9 @@ const Tech: React.FC = () => {
         />
         <SkillCard
           icon={
-            <FaLaravel className="text-gray-500 text-7xl mx-auto transition-colors duration-300 hover:text-red-500" />
+            <DiPhp  className="text-gray-500 text-7xl mx-auto transition-colors duration-300 hover:text-sky-500" />
           }
-          title="Laravel"
+          title="PHP"
         />
       </div>
       <div className="mt-5 lg:px-28 grid grid-cols-2 lg:grid-cols-3 gap-8">
