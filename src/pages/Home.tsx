@@ -19,14 +19,14 @@ const Home: React.FC = () => {
           An enthusiast website developer from Sukabumi, Indonesia.
         </p>
         <div className="flex items-center mb-6">
-          <a className="bg-black btn text-white px-6 py-3 rounded-lg mr-4 flex items-center hover:bg-gray-800 transition" href="https://rezweb.my.id" target='_blank'>
+          <a className="bg-black btn text-white px-6 py-3 rounded-lg mr-4 flex items-center hover:bg-gray-800 transition" href="https://rezweb.my.id" target='_blank' >
           See More 
             <FaArrowRight className="ml-2" />
           </a>
         </div>
         <div className="flex items-center">
           <span className="mr-4">Find me on:</span>
-          <a className="text-gray-800 text-2xl mr-4 hover:text-black transition" href="https://www.linkedin.com/in/irez-abdullah/">
+          <a className="text-gray-800 text-2xl mr-4 hover:text-black transition" href="https://www.linkedin.com/in/irez-abdullah/" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
         </div>

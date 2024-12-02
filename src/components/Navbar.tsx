@@ -68,9 +68,10 @@ const Navbar: React.FC = () => {
                 </ul>
                 <ul
                     className={`flex flex-col lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-4 lg:hidden
-        absolute lg:static left-0 right-0 bg-white lg:bg-transparent 
-        lg:p-0 p-4 shadow-md lg:shadow-none transition-all duration-300 ease-in-out ${isOpen ? 'top-14 opacity-100' : 'top-[-400px] opacity-0'
-                        }`}
+                        absolute lg:static left-0 right-0 bg-white lg:bg-transparent 
+                        lg:p-0 p-4 shadow-md lg:shadow-none transition-all duration-300 ease-in-out 
+                        ${isOpen ? 'top-14 opacity-100' : 'top-[-9999px] opacity-0'}
+                    `}
                 >
                     <li>
                         <NavLink
